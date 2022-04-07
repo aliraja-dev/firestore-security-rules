@@ -175,3 +175,10 @@ package.json
 After adding rules and helpers
 Run the following command
 $firebase emulators:start
+
+## Coverage Report
+
+Localhost:8080/emulator/v1/projects/<project_id>:ruleCoverage.html
+
+This report will help us uncover security rules issues that we might not expect exist.
+![homepage](images/16.png)
