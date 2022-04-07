@@ -159,3 +159,19 @@ In this example, we create a user document for every signing up user, in our use
 Thus only an admin can change the documents of other users. But any loggedin user can read any users document in this case.
 
 ## Unit Testing
+
+Its always better to test your firestore rules before you deploy them.
+
+Create the files test/rules.test.js and test/helpers.js.
+Install Jest and the Firebase Testing Package.
+$npm install --save-dev jest @firebase/rules-unit-testing firebase-admin
+
+Add the following script.
+package.json
+"scripts": {
+"test": "jest --env=node --forceExit",
+},
+
+After adding rules and helpers
+Run the following command
+$firebase emulators:start
